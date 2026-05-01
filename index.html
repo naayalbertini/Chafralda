@@ -125,6 +125,33 @@ section{margin-bottom:28px}
   margin-bottom:25px;
 }
 
+.info-evento{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+  text-align:center;
+}
+
+.info-box{
+  background:linear-gradient(135deg,#fff4f8,#ffe7f0);
+  padding:22px 16px;
+  border-radius:22px;
+  border:1px solid #f6bfd6;
+  box-shadow:0 8px 18px rgba(190,80,120,.08);
+}
+
+.info-box strong{
+  display:block;
+  color:#b63d74;
+  font-size:18px;
+  margin-bottom:8px;
+}
+
+.info-box span{
+  font-size:18px;
+  line-height:1.6;
+}
+
 .programacao{
   display:grid;
   gap:15px;
@@ -344,6 +371,31 @@ textarea{
   </div>
 
   <div id="conteudo">
+
+    <section class="card">
+      <h2 class="titulo">📍 Informações do Evento</h2>
+
+      <div class="info-evento">
+        <div class="info-box">
+          <strong>📅 Data</strong>
+          <span>30/05</span>
+        </div>
+
+        <div class="info-box">
+          <strong>⏰ Horário</strong>
+          <span>12h</span>
+        </div>
+
+        <div class="info-box">
+          <strong>📍 Endereço</strong>
+          <span>
+            Edifício Porto Príncipe<br>
+            Rua Florianópolis, nº 110, ap 501<br>
+            Barra
+          </span>
+        </div>
+      </div>
+    </section>
 
     <section class="card">
       <h2 class="titulo">💖 Programação Especial</h2>
